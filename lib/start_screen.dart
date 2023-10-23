@@ -9,10 +9,18 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset(
-            'assets/images/quiz-logo.png',
-            width: 300,
-          ),
+            Image.asset(
+              'assets/images/quiz-logo.png',
+              width: 300,
+              color: Color.fromARGB(150, 255, 255, 255),
+            ),
+          // Opacity(
+          //   opacity: 0.6,
+          //   child: Image.asset(
+          //     'assets/images/quiz-logo.png',
+          //     width: 300,
+          //   ),
+          // ),
           const SizedBox(
             height: 80,
           ),
@@ -26,12 +34,13 @@ class StartScreen extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          OutlinedButton(
+          OutlinedButton.icon(
             onPressed: () {},
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
             ),
-            child: Text('Start Quiz'),
+            icon: Icon(Icons.arrow_right_alt),
+            label: Text('Start Quiz'),
           ),
         ],
       ),
