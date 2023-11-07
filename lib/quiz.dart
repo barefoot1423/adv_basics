@@ -34,6 +34,8 @@ class _QuizState extends State<Quiz> {
     }
   }
 
+  void restart() {}
+
   @override
   Widget build(BuildContext context) {
     Widget screenWidget = StartScreen(switchScreen);
